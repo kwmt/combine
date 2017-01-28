@@ -9,29 +9,29 @@ import (
 	"github.com/kwmt/go-utils"
 )
 
-// dirname以下にあるファイルをfileNameファイルにまとめる
-func Combine(dirname string, fileName string) {
-	files, err := ioutil.ReadDir(dirname)
+// combine the files under dirName directory
+func Combine(dirName string, fileName string) {
+	files, err := ioutil.ReadDir(dirName)
 	if err != nil {
 		log.Fatal(err)
 	}
 	total := len(files)
 
 	for i, file := range files {
-		fmt.Printf("\r%3.0f%%", utils.Percent(i+1, total))
-
-		file, err := os.Open(fmt.Sprintf("%s/%s", dirname, file.Name()))
+		file, err := os.Open(fmt.Sprintf("%s/%s", dirName, file.Name()))
 		if err != nil {
 			log.Fatal(err)
 		}
 		b, err := ioutil.ReadAll(file)
 		appendToFile(fileName, string(b))
+
+		fmt.Printf("\r%3.0f%%", utils.Percent(i+1, total))
 		file.Close()
 	}
 	fmt.Println()
 }
 
-// filnameファイルにtextをappendする
+// append text to filName file
 func appendToFile(fileName string, text string) {
 	f, err := os.OpenFile(fileName, os.O_APPEND|os.O_WRONLY, 0600)
 	if err != nil {
