@@ -1,0 +1,13 @@
+{
+    "memo": "7a0b6a6ff24bb59b037e0293647731004aed03920b426f0f11919f26c93e08ee",
+    "projects": [
+        {
+            "name": "github.com/kwmt/go-utils",
+            "branch": "master",
+            "revision": "7431874e8437574169c0fb50e811d790fc1ed2ab",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}
