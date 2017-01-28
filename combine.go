@@ -1,9 +1,9 @@
 package combine
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
-	"fmt"
 	"os"
 )
 
@@ -37,4 +37,3 @@ func appendToFile(fileName string, text string) {
 		panic(err)
 	}
 }
-
