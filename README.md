@@ -14,4 +14,4 @@ combine.Combine("./dir", "all.csv")
 ### TODO
 - [ ] まとめるファイルがなかったら作成する
 - [ ] テスト
-- [ ] CI
+- [x] CI
