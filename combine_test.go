@@ -34,7 +34,7 @@ func TestCombine(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	data := "012345678"
+	data := "0123456789"
 	contents, err := ioutil.ReadFile(filename)
 	if err != nil {
 		t.Fatalf("ReadFile %s: %v", filename, err)
