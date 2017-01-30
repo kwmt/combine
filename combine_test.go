@@ -11,19 +11,19 @@ import (
 func TestCombine(t *testing.T) {
 	dir, err := ioutil.TempDir("", "combine")
 	if err != nil {
-		t.Log(err)
+		t.Fatal(err)
 	}
 	defer os.RemoveAll(dir) // clean up
 
 	filesDir, err := ioutil.TempDir(dir, "files")
 	if err != nil {
-		t.Log(err)
+		t.Fatal(err)
 	}
 	for i := 0; i < 10; i++ {
 		file := fmt.Sprintf("%s/%s%d", filesDir, "/sample", i)
 		err = writeFile(file, strconv.Itoa(i))
 		if err != nil {
-			t.Log(err)
+			t.Fatal(err)
 		}
 	}
 
@@ -31,7 +31,7 @@ func TestCombine(t *testing.T) {
 
 	err = Combine(filesDir, filename)
 	if err != nil {
-		t.Log(err)
+		t.Fatal(err)
 	}
 
 	data := "0123456789"
@@ -45,7 +45,6 @@ func TestCombine(t *testing.T) {
 	}
 }
 func writeFile(filename string, data string) error {
-	fmt.Println(data)
 	err := ioutil.WriteFile(filename, []byte(data), 0644)
 	if err != nil {
 		return err
