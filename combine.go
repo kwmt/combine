@@ -33,7 +33,7 @@ func Combine(dirName string, fileName string) {
 
 // append text to filName file
 func appendToFile(fileName string, text string) {
-	f, err := os.OpenFile(fileName, os.O_APPEND|os.O_WRONLY, 0600)
+	f, err := os.OpenFile(fileName, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
 	if err != nil {
 		panic(err)
 	}
