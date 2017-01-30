@@ -3,7 +3,6 @@ package combine
 import (
 	"fmt"
 	"io/ioutil"
-	"log"
 	"os"
 
 	"github.com/kwmt/go-utils"
