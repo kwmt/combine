@@ -1,4 +1,4 @@
-[![wercker status](https://app.wercker.com/status/5f54f03a8f1c96de4ed20dcf6ad055ba/s/master "wercker status")](https://app.wercker.com/project/byKey/5f54f03a8f1c96de4ed20dcf6ad055ba)
+[![wercker status](https://app.wercker.com/status/df5d88cb1934bff34a7b152b67e80c3a/s/master "wercker status")](https://app.wercker.com/project/byKey/df5d88cb1934bff34a7b152b67e80c3a)
 [![GoDoc](https://godoc.org/github.com/kwmt/combine?status.svg)](http://godoc.org/github.com/kwmt/combine) 
 
 あるディレクトリ以下のファイルを一つのファイルにまとめる
