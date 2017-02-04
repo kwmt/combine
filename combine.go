@@ -37,7 +37,7 @@ func Combine(dirName string, fileName string) error {
 	return nil
 }
 
-// append text to filName file
+// append text to fileName file
 func appendToFile(fileName string, text string) error {
 	f, err := os.OpenFile(fileName, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
 	if err != nil {
