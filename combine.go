@@ -8,7 +8,7 @@ import (
 	"github.com/kwmt/go-utils"
 )
 
-// combine the files under dirName directory
+// Combine the files under dirName directory
 func Combine(dirName string, fileName string) error {
 	files, err := ioutil.ReadDir(dirName)
 	if err != nil {
