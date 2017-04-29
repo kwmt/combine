@@ -1,3 +1,5 @@
+# combine
+
 [![wercker status](https://app.wercker.com/status/df5d88cb1934bff34a7b152b67e80c3a/s/master "wercker status")](https://app.wercker.com/project/byKey/df5d88cb1934bff34a7b152b67e80c3a) [![Go Report Card](https://goreportcard.com/badge/github.com/kwmt/combine)](https://goreportcard.com/report/github.com/kwmt/combine)
 [![GoDoc](https://godoc.org/github.com/kwmt/combine?status.svg)](http://godoc.org/github.com/kwmt/combine) 
 
